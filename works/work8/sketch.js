@@ -2,30 +2,60 @@ function setup() {
   let boundingRects = document
     .getElementById("p5Canvas")
     .getBoundingClientRect();
-  let canvas = createCanvas(boundingRects.width, boundingRects.height, WEBGL);
+  let canvas = createCanvas(boundingRects.width, boundingRects.height);
   canvas.parent("p5Canvas");
   // createCanvas(700, 700);
 }
 
 function draw() {
-  background(102);
-
+  background(0);
+  //삼각별
   push();
-  translate(width * 0, height * -0.1);
+  translate(width * 0.15, height * 0.5);
   rotate(frameCount / 200.0);
   star(0, 0, 5, 70, 3);
   pop();
-
+  //많은별
   push();
-  translate(width * -0.3, height * -0.1);
+  translate(width * 0.5, height * 0.5);
   rotate(frameCount / 50.0);
   star(0, 0, 80, 100, 40);
   pop();
-
+  //별
   push();
-  translate(width * 0.3, height * -0.1);
+  translate(width * 0.85, height * 0.5);
   rotate(frameCount / -100.0);
   star(0, 0, 30, 70, 5);
+  pop();
+
+  push();
+  translate(width * 0.85, height * 0.8);
+  rotate(frameCount / -1000.0);
+  star(0, 0, 20, 30, 5);
+  pop();
+
+  push();
+  translate(width * 0.5, height * 0.9);
+  rotate(frameCount / 1000.0);
+  star(0, 0, 20, 50, 5);
+  pop();
+
+  push();
+  translate(width * 0.15, height * 0.75);
+  rotate(frameCount / 1000.0);
+  star(0, 0, 30, 50, 5);
+  pop();
+
+  push();
+  translate(width * 0.25, height * 0.25);
+  rotate(frameCount / 1000.0);
+  star(0, 0, 10, 30, 5);
+  pop();
+
+  push();
+  translate(width * 0.7, height * 0.2);
+  rotate(frameCount / 1000.0);
+  star(0, 0, 30, 50, 5);
   pop();
 }
 
