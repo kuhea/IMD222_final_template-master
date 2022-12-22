@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  line-height: 1;
+  font-weight: normal;
+  font-style: normal;
+  text-decoration: none;
+}
+
+body {
+  background: #212121;
+  font-family: "Sigmar One", cursive;
+  color: #868686;
+  text-align: center;
+}
